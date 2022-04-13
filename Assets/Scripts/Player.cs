@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float moveSpeed = 1;
     [SerializeField] private Rigidbody2D playerRigidBody2D;
     [SerializeField] private Animator playerAnimator;
+
+    public String transitionName;
     
     
     // Start is called before the first frame update
