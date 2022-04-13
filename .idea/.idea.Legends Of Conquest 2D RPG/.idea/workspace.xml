@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4918a6-35fa-42f7-812e-8c5775e96d47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Legends Of Conquest 2D RPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Legends Of Conquest 2D RPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Area Exit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Area Exit.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Area Exit.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Area Exit.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mountains.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mountains.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Town.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Town.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AreaExit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AreaExit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +65,7 @@
       <workItem from="1649784678966" duration="1099000" />
       <workItem from="1649801519761" duration="1087000" />
       <workItem from="1649830752298" duration="2457000" />
-      <workItem from="1649845008333" duration="4018000" />
+      <workItem from="1649845008333" duration="6725000" />
     </task>
     <servers />
   </component>
