@@ -6,16 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4918a6-35fa-42f7-812e-8c5775e96d47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Legends Of Conquest 2D RPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Legends Of Conquest 2D RPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Walking Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Walking Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Walking Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Walking Left.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Walking Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Walking Right.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Walking Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Walking Up.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/walk - vanilla.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/walk - vanilla.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background image.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background image.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/walk - vanilla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/walk - vanilla.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,7 @@
       <updated>1649784670539</updated>
       <workItem from="1649784678966" duration="1099000" />
       <workItem from="1649801519761" duration="1087000" />
+      <workItem from="1649830752298" duration="1724000" />
     </task>
     <servers />
   </component>
