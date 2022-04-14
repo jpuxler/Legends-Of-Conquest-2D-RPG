@@ -434,10 +434,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
+  - '#Healer'
   - Hi I m a healer
+  - '#Jimmy'
   - Hey i m a demon
   - called Jimmy
   - I ve come for your soul
+  - '#Healer'
   - Why are you so mean Jimmy
   - You seem to be nice
 --- !u!61 &1079952633

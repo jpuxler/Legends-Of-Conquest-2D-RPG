@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
 
     private Vector3 bottomLeftEdge;
     private Vector3 topRightEdge;
+    private bool deactivatedMovement;
 
     [SerializeField] private Tilemap tilemap;
     
@@ -43,16 +44,26 @@ public class Player : MonoBehaviour
 
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
-        
-        playerRigidBody2D.velocity = new Vector2(horizontalMovement, verticalMovement) * moveSpeed;
-        
+
+        if (deactivatedMovement)
+        {
+            playerRigidBody2D.velocity = new Vector2(0f, 0f);
+        }
+        else
+        {
+            playerRigidBody2D.velocity = new Vector2(horizontalMovement, verticalMovement) * moveSpeed;
+        }
+    
         playerAnimator.SetFloat("movementX", playerRigidBody2D.velocity.x);
         playerAnimator.SetFloat("movementY", playerRigidBody2D.velocity.y);
 
         if (horizontalMovement == 1 || horizontalMovement == -1 || verticalMovement == 1 || verticalMovement == -1)
         {
-            playerAnimator.SetFloat("lastX", horizontalMovement);
-            playerAnimator.SetFloat("lastY", verticalMovement);
+            if (!deactivatedMovement)
+            {
+                playerAnimator.SetFloat("lastX", horizontalMovement);
+                playerAnimator.SetFloat("lastY", verticalMovement);
+            }
         }
 
         transform.position = new Vector3(
@@ -60,11 +71,19 @@ public class Player : MonoBehaviour
             Mathf.Clamp(transform.position.y, bottomLeftEdge.y, topRightEdge.y),
             Mathf.Clamp(transform.position.z, bottomLeftEdge.z, topRightEdge.z)
         );
+        
+
+
     }
 
     public void SetLimit(Vector3 bottomEdgeToSet, Vector3 topEdgeToSet)
     {
         this.topRightEdge = topEdgeToSet;
         this.bottomLeftEdge = bottomEdgeToSet;
+    }
+
+    public void SetDeactivatedMovement(bool deactivatedMovementSet)
+    {
+        deactivatedMovement = deactivatedMovementSet;
     }
 }

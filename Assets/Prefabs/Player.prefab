@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5691700196204622975}
   - component: {fileID: 5691700196204622969}
   - component: {fileID: 5691700196204622970}
+  - component: {fileID: 3963888034261761466}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -139,6 +140,7 @@ MonoBehaviour:
   playerRigidBody2D: {fileID: 5691700196204622975}
   playerAnimator: {fileID: 5691700196204622970}
   transitionName: 
+  tilemap: {fileID: 0}
 --- !u!95 &5691700196204622970
 Animator:
   serializedVersion: 3
@@ -158,3 +160,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3963888034261761466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5691700196204622972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf1490f4e4ed644c81f4d5def7f43cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Jimmy
+  playerLevel: 1
+  currentXP: 36
+  maxHp: 100
+  currentHP: 0
+  maxMana: 30
+  currentMana: 0
+  dexterity: 10
+  defence: 30
