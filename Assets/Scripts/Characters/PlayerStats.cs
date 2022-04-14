@@ -51,6 +51,20 @@ public class PlayerStats : MonoBehaviour
         {
             currentXP -= xpForEachLevel[playerLevel];
             playerLevel++;
+
+            if (playerLevel % 2 == 0)
+            {
+                dexterity++;
+            }
+            else
+            {
+                defence++;
+            }
+
+            maxHp = (int) (maxHp * 1.06f);
+            currentHP = maxHp;
+            maxMana = (int) (maxMana * 1.06f);
+            currentMana = maxMana;
         }
     }
 }
