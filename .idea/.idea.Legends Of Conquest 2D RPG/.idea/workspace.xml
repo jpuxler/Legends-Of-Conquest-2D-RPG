@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a4918a6-35fa-42f7-812e-8c5775e96d47" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/PlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/PlayerStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Legends Of Conquest 2D RPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Legends Of Conquest 2D RPG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Town2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Town2.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +74,8 @@
       <workItem from="1649932737500" duration="127000" />
       <workItem from="1649932879930" duration="6836000" />
       <workItem from="1649943538067" duration="316000" />
+      <workItem from="1649957783540" duration="1571000" />
+      <workItem from="1649975621919" duration="1394000" />
     </task>
     <servers />
   </component>
