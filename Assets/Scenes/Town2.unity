@@ -346,8 +346,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1079952631}
   - component: {fileID: 1079952630}
+  - component: {fileID: 1079952634}
+  - component: {fileID: 1079952633}
+  - component: {fileID: 1079952632}
   m_Layer: 0
-  m_Name: HEALER
+  m_Name: Healer NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,6 +421,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1079952632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079952629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3899533ddbbd7b84ca489e2000b64a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - Hi I m a healer
+  - Hey i m a demon
+  - called Jimmy
+  - I ve come for your soul
+  - Why are you so mean Jimmy
+  - You seem to be nice
+--- !u!61 &1079952633
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079952629}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.4329058}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.36}
+    newSize: {x: 0.32, y: 0.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.346592, y: 0.52588296}
+  m_EdgeRadius: 0
+--- !u!61 &1079952634
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079952629}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.012322992}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.36}
+    newSize: {x: 0.32, y: 0.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.33535403}
+  m_EdgeRadius: 0
 --- !u!224 &1168985308 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 922252924265682121, guid: 986c926d1080afa47848b6deda7393ab, type: 3}
@@ -778,18 +852,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554888673}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1404522334}
-  m_Father: {fileID: 1168985308}
-  m_RootOrder: 2
+  m_Father: {fileID: 1680255852}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -649.3607, y: -115.728546}
-  m_SizeDelta: {x: -1401.0703, y: -984.5667}
+  m_AnchoredPosition: {x: -649.3607, y: 230.27148}
+  m_SizeDelta: {x: -1360.9182, y: -261.7151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554888675
 MonoBehaviour:
@@ -846,7 +920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1680255852
 RectTransform:
   m_ObjectHideFlags: 0
@@ -859,6 +933,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 711040371}
+  - {fileID: 1554888674}
   m_Father: {fileID: 1168985308}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1006,6 +1081,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 986c926d1080afa47848b6deda7393ab, type: 3}
+--- !u!1 &922252923915816409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 922252924265682133, guid: 986c926d1080afa47848b6deda7393ab, type: 3}
+  m_PrefabInstance: {fileID: 922252923915816408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &922252923915816410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922252923915816409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89766c16f2f59ff48a95d1f9cb64626c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogText: {fileID: 711040372}
+  nameText: {fileID: 1404522335}
+  dialogBox: {fileID: 1680255851}
+  nameBox: {fileID: 1554888673}
+  dialogSentences:
+  - Hey there
+  - I m Jimmy
+  - I come from the underground
+  - I used to kill many people like you back in my days
+  - But now i m a good kind of DEMON
+  currentSentence: 0
 --- !u!1001 &3506767308608900144
 PrefabInstance:
   m_ObjectHideFlags: 0
