@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -26,9 +27,28 @@ public class Inventory : MonoBehaviour
 
     public void AddItems(ItemManager item)
     {
-        print(item.itemName + " has been added to inventory");
-        itemsList.Add(item);
-        print(itemsList.Count);
+        if (item.isStackable)
+        {
+            bool itemAlreadyInInventory = false;
+            
+            foreach (ItemManager itemInInvetory in itemsList)
+            {
+                if (itemInInvetory.itemName == item.itemName)
+                {
+                    itemInInvetory.amount += item.amount;
+                    itemAlreadyInInventory = true;
+                }
+            }
+            
+            if (!itemAlreadyInInventory)
+            {
+                itemsList.Add(item);
+            }
+        }
+        else
+        {
+            itemsList.Add(item);
+        }
     }
 
     public List<ItemManager> GetItemList()
