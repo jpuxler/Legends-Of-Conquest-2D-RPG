@@ -1,26 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
+    [SerializeField] public string playerName;
 
-    [SerializeField] private string playerName;
+    [SerializeField] public Sprite characterImage;
 
-    [SerializeField] private int maxLevel = 50;
-    [SerializeField] private int playerLevel = 1;
-    [SerializeField] private int currentXP;
-    [SerializeField] private int[] xpForEachLevel;
-    [SerializeField] private int baseLevelXP = 100;
+    [SerializeField] public int maxLevel = 50;
+    [SerializeField] public int playerLevel = 1;
+    [SerializeField] public int currentXP;
+    [SerializeField] public int[] xpForEachLevel;
+    [SerializeField] public int baseLevelXP = 100;
     
-    [SerializeField] private int maxHp = 100;
-    [SerializeField] private int currentHP;
+    [SerializeField] public int maxHp = 100;
+    [SerializeField] public int currentHP;
 
-    [SerializeField] private int maxMana = 30;
-    [SerializeField] private int currentMana;
+    [SerializeField] public int maxMana = 30;
+    [SerializeField] public int currentMana;
 
-    [SerializeField] private int dexterity;
-    [SerializeField] private int defence;
+    [SerializeField] public int dexterity;
+    [SerializeField] public int defence;
     
     
     // Start is called before the first frame update
@@ -67,4 +69,7 @@ public class PlayerStats : MonoBehaviour
             currentMana = maxMana;
         }
     }
+    
+    
+    
 }

@@ -36,7 +36,7 @@ public class DialogController : MonoBehaviour
                     if (currentSentence >= dialogSentences.Length)
                     {
                         dialogBox.SetActive(false);
-                        Player.instance.SetDeactivatedMovement(false);
+                        GameManager.instance.dialogBoxOpened = false;
                     }
                     else
                     {
@@ -58,7 +58,7 @@ public class DialogController : MonoBehaviour
     {
         dialogSentences = newSentencesToUse;
         currentSentence = 0;
-        Player.instance.SetDeactivatedMovement(true);
+        GameManager.instance.dialogBoxOpened = true;
 
         CheckForName();
         dialogText.text = dialogSentences[currentSentence];
