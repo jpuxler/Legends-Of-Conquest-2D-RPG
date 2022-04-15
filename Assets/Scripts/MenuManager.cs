@@ -22,6 +22,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI statName, statHP, statMana, statDex, statDef;
     [SerializeField] private Image statCharacterImage;
 
+    [SerializeField] private GameObject itemSlotContainer;
+    [SerializeField] private Transform itemSlotContainerParent;
+
     private Animator animator;
 
     public static MenuManager instance;
@@ -90,6 +93,20 @@ public class MenuManager : MonoBehaviour
         statDef.text = playerSelected.defence.ToString();
 
         statCharacterImage.sprite = playerSelected.characterImage;
+    }
+
+    public void UpdateItemsInventory()
+    {
+        foreach (Transform itemSlot in itemSlotContainerParent)
+        {
+            Destroy(itemSlot.gameObject);
+        }
+        foreach (ItemManager item in Inventory.instance.GetItemList())
+        {
+            RectTransform itemSlot = Instantiate(itemSlotContainer, itemSlotContainerParent).GetComponent<RectTransform>();
+            Image itemImage = itemSlot.Find("ItemsImage").GetComponent<Image>();
+            itemImage.sprite = item.itemImage;
+        }
     }
 
     public void FadeImage()

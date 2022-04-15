@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,5 +41,19 @@ public class ItemManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            Inventory.instance.AddItems(this);
+            SelfDestroy();
+        }
+    }
+
+    public void SelfDestroy()
+    {
+        Destroy(gameObject);
     }
 }

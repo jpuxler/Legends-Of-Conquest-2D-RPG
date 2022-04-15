@@ -26,6 +26,13 @@ public class Inventory : MonoBehaviour
 
     public void AddItems(ItemManager item)
     {
+        print(item.itemName + " has been added to inventory");
         itemsList.Add(item);
+        print(itemsList.Count);
+    }
+
+    public List<ItemManager> GetItemList()
+    {
+        return itemsList;
     }
 }
