@@ -11,6 +11,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Image imageToFade;
     [SerializeField] private GameObject menu;
 
+    [SerializeField] private GameObject[] statsButtons;
+
     private PlayerStats[] playerStats;
     [SerializeField] private TextMeshProUGUI[] nameText, hpText, manaText, currentXpText, xpText;
     [SerializeField] private Slider[] xpSlider;
@@ -59,6 +61,18 @@ public class MenuManager : MonoBehaviour
             characterImage[i].sprite = playerStats[i].characterImage;
         }
         
+    }
+
+    public void StatsMenu()
+    { 
+        for (int i = 0; i < playerStats.Length; i++)
+        {
+            Debug.Log("Test message");
+            statsButtons[i].SetActive(true);
+            
+            
+            
+        }
     }
 
     public void FadeImage()
