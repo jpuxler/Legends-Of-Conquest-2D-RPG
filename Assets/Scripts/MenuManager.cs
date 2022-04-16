@@ -25,6 +25,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject itemSlotContainer;
     [SerializeField] private Transform itemSlotContainerParent;
 
+
+    public TextMeshProUGUI itemName, itemDescription;
+
+    public ItemManager activeItem;
+
     private Animator animator;
 
     public static MenuManager instance;
@@ -116,7 +121,21 @@ public class MenuManager : MonoBehaviour
             {
                 itemsAmountText.text = "";
             }
+
+            itemSlot.GetComponent<ItemButton>().itemOnButton = item;
         }
+    }
+
+    public void DiscardItem()
+    {
+        Inventory.instance.RemoveItem(activeItem);
+        UpdateItemsInventory();
+    }
+
+    public void UseItem()
+    {
+        activeItem.UseItem();
+        DiscardItem();
     }
 
     public void FadeImage()

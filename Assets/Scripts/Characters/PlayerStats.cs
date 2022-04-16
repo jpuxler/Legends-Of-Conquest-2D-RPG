@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
+    public static PlayerStats instance;
+    
     [SerializeField] public string playerName;
 
     [SerializeField] public Sprite characterImage;
@@ -69,7 +71,24 @@ public class PlayerStats : MonoBehaviour
             currentMana = maxMana;
         }
     }
+
+    public void AddHP(int amountHpToAdd)
+    {
+        currentHP += amountHpToAdd;
+        if (currentHP > maxHp)
+        {
+            currentHP = maxHp;
+        }
+    }
     
+    public void AddMana(int amountManaToAdd)
+    {
+        currentMana += amountManaToAdd;
+        if (currentMana > maxMana)
+        {
+            currentMana = maxMana;
+        }
+    }
     
     
 }

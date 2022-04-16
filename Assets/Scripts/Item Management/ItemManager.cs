@@ -31,21 +31,22 @@ public class ItemManager : MonoBehaviour
 
     public bool isStackable;
     public int amount;
+
+
+    public void UseItem()
+    {
+        if (itemType == ItemType.Item)
+        {
+            if (affectType == AffectType.HP)
+            {
+                PlayerStats.instance.AddHP(amountOfAffect);
+            }else if (affectType == AffectType.Mana)
+            {
+                PlayerStats.instance.AddMana(amountOfAffect);
+            }
+        }
+    }
     
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
@@ -57,6 +58,6 @@ public class ItemManager : MonoBehaviour
 
     public void SelfDestroy()
     {
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
     }
 }

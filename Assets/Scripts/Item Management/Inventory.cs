@@ -51,6 +51,33 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void RemoveItem(ItemManager item)
+    {
+        if (item.isStackable)
+        {
+            ItemManager inventoryItem = null;
+
+            foreach (ItemManager itemInInventory in itemsList)
+            {
+                if (itemInInventory.itemName == item.itemName)
+                {
+                    itemInInventory.amount--;
+                    inventoryItem = itemInInventory;
+                }
+            }
+
+            if (inventoryItem != null && inventoryItem.amount <= 0)
+            {
+                print("remove 1");
+                itemsList.Remove(inventoryItem);
+            }
+        }
+        else
+        {
+            print("remove 2");
+            itemsList.Remove(item);
+        }
+    }
     public List<ItemManager> GetItemList()
     {
         return itemsList;
